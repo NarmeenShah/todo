@@ -1,7 +1,6 @@
 
-	function myfunc(e)
+	function myfunc()
 	{
-		e.preventDefault();
 	var title=document.getElementById("title").value;
 	var type=document.getElementById("type").value;
 	var description=document.getElementById("description").value;
