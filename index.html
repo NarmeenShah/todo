@@ -8,16 +8,18 @@
 <body>
 	<h1 style="text-align: center; color: black;"> DIARY </h1>
 
-<form 
+<form>
 	<fieldset>
 		<legend>TO DO LIST</legend> <br>
 	Title: <br> 
-	<input id="opt1" type="text" name="Title" required autofocus placeholder="Eg: Learn JavaScript"> <br><br>
+	<input id="title" type="text" name="Title" required autofocus placeholder="Eg: Learn JavaScript"> <br><br>
 	Choose Category: <br>
-	<input id="opt2" type="radio" name="category" checked> Home <br>
-	<input id="opt3" type="radio" name="category"> Work <br><br>
+	<select id="type">
+		<option value="home">Home</option>
+		<option value="work">work</option>
+	</select>
 	Description: <br>
-	<textarea id="opt4" name="Description" rows="20" cols="25" title="Describe your duties" required></textarea> <br><br>
+	<textarea id="description" name="Description" rows="20" cols="25" title="Describe your duties" required></textarea> <br><br>
 	<input type="submit" value="Add" onclick="myfunc(event)">
 	</fieldset>
 </form>
